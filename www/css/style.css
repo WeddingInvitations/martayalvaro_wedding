@@ -29,7 +29,7 @@ body.custom-body {
 @media only screen and (max-width: 600px) {
 
     video {
-        height: 550px;
+        height: 530px;
     }
 }
 
@@ -56,7 +56,7 @@ nav::after {
     display: block;
     width: 100%;
     height: 5px;
-    background-color: #464646;
+    background-color: #97a086;
     /* Color de la línea */
     animation: aparecerLinea 10s forwards;
 }
