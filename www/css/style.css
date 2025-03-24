@@ -30,7 +30,32 @@ header {
     background-image: url('images/header_2.png');
     background-repeat: no-repeat;
     background-position: center;
-    height: 500px;
+    height: 550px;
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+/* Cuando la clase "show" es añadida, las flores aparecerán */
+.scroll-reveal.show {
+    opacity: 1;
+}
+
+.icon img {
+    max-width: 30%;
+}
+
+/* Ubicación en el margen izquierdo */
+.icon_left {
+    float: left;
+}
+
+/* Ubicación en el margen derecho */
+.icon_right {
+    float: right;
 }
 
 /* @media only screen and (max-width: 600px) {
