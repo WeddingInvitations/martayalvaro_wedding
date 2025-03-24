@@ -379,15 +379,6 @@ span {
     max-width: 4%;
 }
 
-@media only screen and (max-width: 600px) {
-    .timeline {
-        position: relative;
-        margin: 50px 0;
-        padding-left: 40px;
-        border-left: 3px solid #35281d;
-    }
-}
-
 
 
 
