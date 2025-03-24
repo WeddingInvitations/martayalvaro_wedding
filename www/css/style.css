@@ -156,13 +156,14 @@ audio {
 
 
 .cuenta-regresiva {
-    background: url('images/fondo_cuenta.png') no-repeat center center;
-    background-size: cover;
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    border-radius: 10px;
-    max-width: 300px;
+    border-radius: 20px;
+    max-width: 350px;
     margin: 20px auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border: 3px solid #FFB6C1; /* Bordes suaves y coloridos */
+    backdrop-filter: blur(5px); /* Suaviza el fondo */
 }
 
 #cuenta-atras {
@@ -170,22 +171,52 @@ audio {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    font-family: 'Patrick Hand', cursive; /* Letra escrita a mano */
 }
 
-/* .tiempo {
+.tiempo {
+    background: url('images/acuarela.png') no-repeat center;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-size: 1.5em;
+    color: #333;
+    transition: transform 0.3s;
+}
+
+.tiempo:hover {
+    transform: scale(1.1); /* Efecto hover para dinamismo */
+}
+
+span {
+    display: block;
+    font-size: 2em;
     font-weight: bold;
-    color: #222;
-} */
+    color: #4A4A4A;
+    animation: colorCambio 2s infinite alternate;
+}
 
 .unidad {
     font-size: 0.8em;
+    color: #666;
 }
 
 .barra {
     font-size: 1.5em;
-    color: #bbb;
+    color: #FF7F7F;
+}
+
+@keyframes colorCambio {
+    0% {
+        color: #FF7F7F;
+    }
+    50% {
+        color: #7FBFFF;
+    }
+    100% {
+        color: #7FFF7F;
+    }
 }
 
 
