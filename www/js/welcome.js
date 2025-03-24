@@ -58,19 +58,19 @@ function initMap() {
 }
 
 
-// Itinerario
-window.addEventListener('scroll', function () {
-  const events = document.querySelectorAll('.event');
-  const windowHeight = window.innerHeight;
-  const triggerPoint = windowHeight * 0.85;
+// // Itinerario
+// window.addEventListener('scroll', function () {
+//   const events = document.querySelectorAll('.event');
+//   const windowHeight = window.innerHeight;
+//   const triggerPoint = windowHeight * 0.85;
 
-  events.forEach(event => {
-    const eventTop = event.getBoundingClientRect().top;
-    if (eventTop < triggerPoint) {
-      event.classList.add('show');
-    } else {
-      event.classList.remove('show');
-    }
-  });
-});
+//   events.forEach(event => {
+//     const eventTop = event.getBoundingClientRect().top;
+//     if (eventTop < triggerPoint) {
+//       event.classList.add('show');
+//     } else {
+//       event.classList.remove('show');
+//     }
+//   });
+// });
 
