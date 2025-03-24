@@ -46,12 +46,12 @@ header {
 }
 
 .icon img {
-    max-width: 30%;
+    max-width: 25%;
 }
 
-/* Ubicación en el margen izquierdo */
 .icon_left {
     float: left;
+    transform: rotate(15deg);
 }
 
 /* Ubicación en el margen derecho */
