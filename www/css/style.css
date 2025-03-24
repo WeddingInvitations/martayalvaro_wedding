@@ -231,7 +231,7 @@ span {
 
 #general-information h1 {
     color: #f59d9e;
-    font-family: "Over the Rainbow", cursive;
+    font-family: "Over the Rainbow";
     font-weight: 400;
     font-size: 35px;
     letter-spacing: 2px;
@@ -407,9 +407,9 @@ span {
 } */
 
 #info_interes h1 {
-    color: #35281d;
-    font-family: 'Quattrocento', serif;
-    font-style: normal;
+    color: #f59d9e;
+    font-family: "Over the Rainbow";
+    font-weight: 400;
     font-size: 35px;
     letter-spacing: 2px;
 }
@@ -473,9 +473,9 @@ span {
 }
 
 #asistencia h1 {
-    color: #35281d;
-    font-family: 'Quattrocento', serif;
-    font-style: normal;
+    color: #f59d9e;
+    font-family: "Over the Rainbow";
+    font-weight: 400;
     font-size: 35px;
     letter-spacing: 2px;
 }
@@ -713,9 +713,9 @@ button#submit:active {
 }
 
 #regalos h1 {
-    color: #35281d;
-    font-family: 'Quattrocento', serif;
-    font-style: normal;
+    color: #f59d9e;
+    font-family: "Over the Rainbow";
+    font-weight: 400;
     font-size: 35px;
     letter-spacing: 2px;
 }
