@@ -173,7 +173,7 @@ audio {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    font-family: 'Patrick Hand';
+    /* font-family: 'Patrick Hand'; */
 }
 
 .tiempo {
