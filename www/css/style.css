@@ -326,14 +326,9 @@ span {
     width: 100px;
 }
 
-.event .icon {
-    margin-right: 20px;
-}
 
 .event .icon img {
-    /* width: 30px;
-    height: 30px; */
-    max-width: 22%;
+    max-width: 25%;
 }
 
 .event .description {
