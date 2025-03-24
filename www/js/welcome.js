@@ -34,11 +34,11 @@ const x = setInterval(function () {
 function initMap() {
   const iglesia = { lat: 36.597627129642355, lng: -6.235430154492191 };
   const finca = { lat: 41.513338993899914, lng: 2.2339041952419825 };
-  const center = { lat: 41.513338993899914, lng: 2.2339041952419825 };
+  // const center = { lat: 41.513338993899914, lng: 2.2339041952419825 };
 
   var map = new google.maps.Map(document.getElementById("mapDiv"), {
     zoom: 9,
-    center: center,
+    center: iglesia,
     fullscreenControl: false,
     zoomControl: true,
     streetViewControl: false
