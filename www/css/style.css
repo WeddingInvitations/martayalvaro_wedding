@@ -174,15 +174,10 @@ audio {
     align-items: center;
     gap: 15px;
     font-family: 'Patrick Hand', cursive;
-    /* Letra escrita a mano */
 }
 
 .tiempo {
-    background: url('images/acuarela.png') no-repeat center;
-    background-size: cover;
-    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     color: #333;
     transition: transform 0.3s;
@@ -195,8 +190,7 @@ audio {
 
 span {
     display: block;
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 1.5em;
     color: #4A4A4A;
     animation: colorCambio 2s infinite alternate;
 }
@@ -213,15 +207,15 @@ span {
 
 @keyframes colorCambio {
     0% {
-        color: #FF7F7F;
+        color: #f9a3a3;
     }
 
     50% {
-        color: #7FBFFF;
+        color: #8dc6ff;
     }
 
     100% {
-        color: #7FFF7F;
+        color: #b7ebb7;
     }
 }
 
