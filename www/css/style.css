@@ -714,7 +714,6 @@ button#submit:active {
 @media only screen and (max-width: 600px) {
     .form-container-asist {
         padding: 20px;
-        max-width: 90%;
     }
 }
 
