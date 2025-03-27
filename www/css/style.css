@@ -718,6 +718,27 @@ button#submit:active {
 }
 
 
+/* VESTIMENTA */
+
+#vestimenta {
+    text-align: center;
+    padding: 20px;
+}
+
+#vestimenta h1 {
+    color: #f59d9e;
+    font-family: "Over the Rainbow";
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.vestimenta-texto p {
+    text-align: center;
+    padding: 15px;
+}
+
+
 /* REGALOS */
 
 #regalos {
