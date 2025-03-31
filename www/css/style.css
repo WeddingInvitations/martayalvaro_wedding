@@ -263,11 +263,10 @@ span {
 
 
 /* Estilo para la imagen */
-.finca-image-container {
+/* .finca-image-container {
     position: relative;
     display: inline-block;
     border: 5px solid #d8c8b7;
-    /* Bordes vintage */
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -278,6 +277,52 @@ span {
     width: 100%;
     height: auto;
     border-radius: 15px;
+} */
+
+
+.collage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 20px;
+}
+
+.finca-item {
+    position: relative;
+    width: 250px; /* Tamaño controlado */
+    transform: rotate(-3deg); /* Ligera inclinación para efecto collage */
+}
+
+.finca-item:nth-child(even) {
+    transform: rotate(3deg); /* Alternar rotación */
+}
+
+.collage-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.2));
+    clip-path: polygon(3% 0%, 97% 0%, 100% 3%, 100% 97%, 97% 100%, 3% 100%, 0% 97%, 0% 3%);
+}
+
+.texto-tarjeta {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(216, 200, 183, 0.9);
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #5a4a42;
+    width: 90%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(90, 74, 66, 0.5);
 }
 
 .boton {
