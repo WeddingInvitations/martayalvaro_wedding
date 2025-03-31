@@ -564,6 +564,10 @@ span {
     letter-spacing: 2px;
 }
 
+#asistencia h3 {
+    font-size: 20px;
+}
+
 #asistencia p {
     color: #555555;
     text-align: center;
