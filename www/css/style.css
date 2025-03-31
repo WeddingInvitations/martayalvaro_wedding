@@ -513,16 +513,37 @@ span {
     background-color: #753131;
 }
 
-/* 
-.boton {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4d4235;
-    color: white;
-    text-decoration: none;
+.contacto-novios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.contacto {
+    text-align: center;
+    background: #f7f1ea;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d8c8b7;
+    width: 150px;
+}
+
+.boton-telefono button {
+    background: #d8c8b7;
+    border: none;
+    padding: 8px 12px;
     border-radius: 5px;
-    font-size: 16px;
-} */
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.boton-telefono button:hover {
+    background: #c4b4a5;
+}
 
 
 
