@@ -314,13 +314,12 @@ span {
     left: 50%;
     transform: translateX(-50%);
     background: rgba(216, 200, 183, 0.9);
-    padding: 10px 15px;
-    font-size: 14px;
+    padding: 5px 5spx;
+    font-size: 13px;
     border-radius: 8px;
     text-align: center;
-    font-family: 'Georgia', serif;
     color: #5a4a42;
-    width: 90%;
+    width: 80%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     border: 2px solid rgba(90, 74, 66, 0.5);
 }
