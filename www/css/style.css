@@ -566,8 +566,8 @@ span {
 
 #asistencia p {
     color: #555555;
-    margin-bottom: 40px;
     text-align: center;
+    font-size: 12px;
 }
 
 /* Formulario */
