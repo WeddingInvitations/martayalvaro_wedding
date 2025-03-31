@@ -33,7 +33,7 @@ const x = setInterval(function () {
 // Función para mostrar Google Maps
 function initMap() {
   const iglesia = { lat: 36.597627129642355, lng: -6.235430154492191 };
-  const finca = { lat: 41.513338993899914, lng: 2.2339041952419825 };
+  const finca = { lat: 36.68532176597533, lng: -6.249484967459108 };
   // const center = { lat: 41.513338993899914, lng: 2.2339041952419825 };
 
   var map = new google.maps.Map(document.getElementById("mapDiv"), {
@@ -44,13 +44,13 @@ function initMap() {
     streetViewControl: false
   });
 
-  new google.maps.Marker ({
+  new google.maps.Marker({
     position: iglesia,
     map,
     title: "Parroquia"
   });
 
-  new google.maps.Marker ({
+  new google.maps.Marker({
     position: finca,
     map,
     title: "Finca"
@@ -60,18 +60,18 @@ function initMap() {
 
 function animateOnScroll(className) {
   window.addEventListener('scroll', function () {
-      const elements = document.querySelectorAll(`.${className}`);
-      const windowHeight = window.innerHeight;
-      const triggerPoint = windowHeight * 0.85;
+    const elements = document.querySelectorAll(`.${className}`);
+    const windowHeight = window.innerHeight;
+    const triggerPoint = windowHeight * 0.85;
 
-      elements.forEach(element => {
-          const elementTop = element.getBoundingClientRect().top;
-          if (elementTop < triggerPoint) {
-              element.classList.add('show');
-          } else {
-              element.classList.remove('show');
-          }
-      });
+    elements.forEach(element => {
+      const elementTop = element.getBoundingClientRect().top;
+      if (elementTop < triggerPoint) {
+        element.classList.add('show');
+      } else {
+        element.classList.remove('show');
+      }
+    });
   });
 }
 
