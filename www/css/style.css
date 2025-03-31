@@ -565,7 +565,8 @@ span {
 }
 
 #asistencia h3 {
-    font-size: 20px;
+    font-size: 18px;
+    margin: 20px;
 }
 
 #asistencia p {
