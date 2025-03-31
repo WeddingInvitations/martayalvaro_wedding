@@ -310,12 +310,12 @@ span {
 
 .texto-tarjeta {
     position: absolute;
-    bottom: -15px;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(124, 146, 153, 0.94);
-    padding: 6px 6px;
-    font-size: 14px;
+    padding: 5px 5px;
+    font-size: 13px;
     border-radius: 8px;
     text-align: center;
     color: #f9e7db;
