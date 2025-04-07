@@ -12,14 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
   var checkboxSi = document.getElementById("acompanadoSi");
   var busNo = document.getElementById("busNo");
   var busSi = document.getElementById("busSi");
-  var carne = document.getElementById("carne");
-  var pescado = document.getElementById("pescado");
 
 
   checkboxSi.addEventListener("change", habilitarCampoAcompanante);
   checkboxNo.addEventListener("change", habilitarCampoAcompanante);
-  // busSi.addEventListener("change", habilitarBus);
-  // busNo.addEventListener("change", habilitarBus);
+  busSi.addEventListener("change", habilitarBus);
+  busNo.addEventListener("change", habilitarBus);
   // carne.addEventListener("change", habilitarComida);
   // pescado.addEventListener("change", habilitarComida);
   
@@ -38,14 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // function habilitarBus(event) {
-  //   // Desmarcar el otro checkbox
-  //   if (busNo.checked && event.target === busSi) {
-  //     busNo.checked = false;
-  //   } else if (busSi.checked && event.target === busNo) {
-  //     busSi.checked = false;
-  //   }
-  // }
+  function habilitarBus(event) {
+    // Desmarcar el otro checkbox
+    if (busNo.checked && event.target === busSi) {
+      busNo.checked = false;
+    } else if (busSi.checked && event.target === busNo) {
+      busSi.checked = false;
+    }
+  }
 
   // function habilitarComida(event) {
   //   // Desmarcar el otro checkbox
@@ -117,9 +115,6 @@ function addAcompanante() {
             <option value="adulto">Adulto</option>
             <option value="niño">Niño</option>
           </select>
-          <div id="edad-container">
-            <input type="number" placeholder="Edad del Niño" class="edad" name="edad_niño">
-          </div>
           <input type="text" placeholder="Alergias" class="allergies">
           <br><br>
           <button id="deleteAcompananteButton">Borrar Acompañante</button>
@@ -167,7 +162,7 @@ document.getElementById('attendance-form').addEventListener("submit", function (
   //   type = "Niño";
   // }
 
-  // var bus = document.getElementById("busSi").checked;
+  var bus = document.getElementById("busSi").checked;
   // var comida = document.getElementById("carne").checked;
 
   // if (comida) {
@@ -190,7 +185,7 @@ document.getElementById('attendance-form').addEventListener("submit", function (
       var acompanante = {
         Nombre: acompananteElement.querySelector(".name").value,
         TipoInvitado: acompananteElement.querySelector(".type").value,
-        Edad: acompananteElement.querySelector(".edad").value,
+        // Edad: acompananteElement.querySelector(".edad").value,
         Alergias: acompananteElement.querySelector(".allergies").value
       };
 
@@ -209,7 +204,7 @@ document.getElementById('attendance-form').addEventListener("submit", function (
     Teléfono: phone,
     Asistencia: attendance,
     Alergias: allergies,
-    // Bus: bus,
+    Bus: bus,
     // Comida: comida,
     Acompañantes: acompanantes
   })
@@ -224,7 +219,7 @@ document.getElementById('attendance-form').addEventListener("submit", function (
         ph: phone,
         att: attendance,
         ale: allergies,
-        // bus: bus,
+        bus: bus,
         // comida: comida,
         gue: acompanantes
       };
@@ -241,8 +236,8 @@ document.getElementById('attendance-form').addEventListener("submit", function (
   document.getElementById("alergias").value = "";
   document.getElementById("acompanadoSi").checked = "";
   document.getElementById("acompanadoNo").checked = "";
-  // document.getElementById("busSi").checked = "";
-  // document.getElementById("busNo").checked = "";
+  document.getElementById("busSi").checked = "";
+  document.getElementById("busNo").checked = "";
   // document.getElementById("carne").checked = "";
   // document.getElementById("pescado").checked = "";
   // document.getElementById("adulto").checked = "";
@@ -291,7 +286,7 @@ async function enviarEmail(emailData) {
   console.log("Email data: ", emailData);
   // Enviar los datos al servidor
   try {
-    const response = await fetch('https://us-central1-sarayjordiwedding.cloudfunctions.net/enviarEmail', {
+    const response = await fetch('https://us-central1-martayalvarowedding.cloudfunctions.net/enviarEmail', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
