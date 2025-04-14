@@ -846,10 +846,11 @@ button#submit:active {
 }
 
 #carrousel h1 {
-    color: #734929;
-    font-family: "Oooh Baby", cursive;
-    font-size: 40px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #f59d9e;
+    font-family: "Over the Rainbow";
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 2px;
 }
 
 .carrousel-texto p {
