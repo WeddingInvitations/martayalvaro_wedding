@@ -17,12 +17,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Sacramento&display=swap"
+    rel="stylesheet">
 
   <!-- Bootstrap -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Sacramento&display=swap"
-    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
   <!-- Archivos script.js -->
   <script type="module" src="js/attendance.js"></script>
@@ -35,13 +38,24 @@
 
 <body class="custom-body">
 
-  <header>
-    <!-- <video autoplay loop muted playsinline>
-      <source src="video/header.mp4" type="video/mp4">
-    </video> -->
-  </header>
+  <header></header>
 
-  <nav></nav>
+  <button id="play-button"></button>
+
+  <audio id="background-music" loop>
+    <source src="audio/Bombai.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const playButton = document.getElementById('play-button');
+    const audio = document.getElementById('background-music');
+
+    playButton.addEventListener('click', () => {
+      audio.play();
+      playButton.style.display = 'none'; // Oculta el botón después de hacer clic
+    });
+  </script>
+
 
   <!-- BIENVENIDOS -->
   <div id="bienvenidos">
@@ -155,19 +169,19 @@
       </div>
 
       <div class="event">
-        <div class="time">18:30h</div>
+        <div class="time">20:00h</div>
         <div class="icon"><img src="images/cocktail.png" alt="Cocktail" /></div>
         <div class="description">Apertura cocktail</div>
       </div>
 
       <div class="event">
-        <div class="time">20:00h</div>
+        <div class="time">22:00h</div>
         <div class="icon"><img src="images/banquete.png" alt="Cena" /></div>
         <div class="description">Inicio banquete</div>
       </div>
 
       <div class="event">
-        <div class="time">22:00h</div>
+        <div class="time">00:30h</div>
         <div class="icon"><img src="images/baile.png" alt="Baile" /></div>
         <div class="description">Barra libre</div>
       </div>
@@ -181,7 +195,7 @@
     <h1> Asistencia </h1>
 
     <div class="asistencia-texto">
-      <h3>Por favor, confirma tu asistencia antes del <strong>30 de junio</strong></h3>
+      <h3>Por favor, confirma tu asistencia antes del <strong>31 de julio</strong></h3>
       <div class="scroll-reveal icon">
         <img class="icon_right" src="images/asistencia.png" alt="elemento decorativo">
       </div>
@@ -259,24 +273,24 @@
   <div id="info_interes">
     <h1> Información de interés </h1>
 
-    <p> La finca cuenta con parking y ropero gratuitos, disponibles durante toda la celebración. </p>
+    <p> Queremos ponéroslo fácil, así que aquí os dejamos algunas sugerencias de peluquerías y alojamientos cerca de la Plaza de Toros. </p>
 
     <br>
-    <p> También os dejamos por aquí una sugerencia de alojamiento cercano. </p>
 
-    <div class="hotel-info">
-      <a href="https://all.accor.com/hotel/3309/index.es.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps"
-        class="hotel-link" target="_blank">
-        🛎️ Hotel Ibis Barcelona Mollet ** </a>
-      <br>
-      <a href="tel:935790005" class="boton-telefono">
-        <button>📞 Llamar al 93 579 00 05</button>
-      </a>
-    </div>
+    <a href="docs/PELUQUERIAS.pdf" target="_blank" class="boton-pdf">
+      💇‍♀️ Peluquerías
+    </a>
 
-    <br>
+    <br><br>
+
+    <a href="docs/ALOJAMIENTOS.pdf" target="_blank" class="boton-pdf">
+      📄 Alojamientos
+    </a>
+
+    <br><br>
+
     <div class="contacto-novios">
-      <p>  Además, aquí te dejamos nuestros contactos de referencia, por si los necesitas por algún motivo:  </p>
+      <p> Además, aquí os dejamos nuestros contactos de referencia, por si los necesitas por algún motivo: </p>
       <div class="contacto">
         <p>📲 <strong>Cris</strong></p>
         <a href="tel:+34685856288" class="boton-telefono">
@@ -300,6 +314,102 @@
     </div> -->
 
   </div>
+
+
+  <!-- MÚSICA -->
+  <div id="musica">
+    <h1>Música</h1>
+
+    <!-- <img class="element" src="images/element_7.png" alt="Element" /> -->
+    <div class="musica-texto">
+      <p>
+        Y por supuesto, esta aventura no puede funcionar sin una buena banda sonora. <br>
+        ¿Nos ayudas a crearla?
+      </p>
+      <!-- Enlace de invitación a la lista colaborativa -->
+      <a href="https://open.spotify.com/playlist/7mJmBuHkt5Al2ZAKDAlkwO?si=35f6801fc5bf4720&pt=e23b1f0f8a7d66580ecdafdf049f0911"
+        target="_blank">¡Añade tu
+        canción aquí!</a>
+      <br><br>
+
+      <!-- Widget de Spotify embebido -->
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/7mJmBuHkt5Al2ZAKDAlkwO?utm_source=generator" width="100%"
+        height="152" frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <!-- CARROUSEL -->
+  <div id="carrousel">
+    <h1>Nosotros</h1>
+
+    <div class="carrousel-texto">
+      <p>
+        ¿Quieres conocer un poco más de nuestras aventuras?
+      </p>
+    </div>
+    <div id="travelCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#travelCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#travelCarousel" data-slide-to="1"></li>
+        <li data-target="#travelCarousel" data-slide-to="2"></li>
+        <li data-target="#travelCarousel" data-slide-to="3"></li>
+        <li data-target="#travelCarousel" data-slide-to="4"></li>
+        <li data-target="#travelCarousel" data-slide-to="5"></li>
+        <li data-target="#travelCarousel" data-slide-to="6"></li>
+        <li data-target="#travelCarousel" data-slide-to="7"></li>
+        <li data-target="#travelCarousel" data-slide-to="8"></li>
+        <li data-target="#travelCarousel" data-slide-to="9"></li>
+        <li data-target="#travelCarousel" data-slide-to="10"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/carrousel/01.JPG" class="d-block w-100" alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carrousel/02.jpg" class="d-block w-100" alt="Imagen 2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carrousel/03.jpg" class="d-block w-100" alt="Imagen 3">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carrousel/04.jpg" class="d-block w-100" alt="Imagen 4">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carrousel/05.jpg" class="d-block w-100" alt="Imagen 5">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carrousel/06.jpg" class="d-block w-100" alt="Imagen 6">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carrousel/07.jpg" class="d-block w-100" alt="Imagen 7">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carrousel/08.jpg" class="d-block w-100" alt="Imagen 8">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carrousel/09.jpg" class="d-block w-100" alt="Imagen 9">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carrousel/10.jpg" class="d-block w-100" alt="Imagen 10">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carrousel/11.jpg" class="d-block w-100" alt="Imagen 11">
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#travelCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#travelCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+  </div>
+
 
   <!-- VESTIMENTA -->
   <div id="vestimenta">
@@ -335,14 +445,14 @@
       </p>
     </div>
 
-    <code class="plain-text">ESXX XXXX XXXX XXXX XXXX</code>
+    <code class="plain-text">ES19 0182 5332 1802 0881 9836</code>
     <br>
 
   </div>
 
   <br><br>
 
-  <img class="pre-footer" src="images/footer.png" alt="Final img" />
+  <img class="pre-footer" src="images/pre_footer.png" alt="Final img" />
 
   <!-- Pie de página -->
   <footer>

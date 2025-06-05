@@ -68,57 +68,13 @@ header {
 } */
 
 
-/* @media only screen and (max-width: 600px) {
-
-    video {
-        height: 530px;
-    }
-}
-
-video {
-    max-width: 3400px;
-} */
-
-/* 
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-a:hover {
-    color: #8f746c;
-}
-
-nav::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 5px;
-    background-color: #97a086;
-    animation: aparecerLinea 10s forwards;
-}
-
-@keyframes aparecerLinea {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-} */
-
-
 
 /* PLAY */
 
-/* #play-button {
+#play-button {
     width: 60px;
     height: 60px;
-    background-color: #eae5e2;
+    background-color: #f7a193;
     border: none;
     border-radius: 50%;
     display: flex;
@@ -149,7 +105,7 @@ nav::after {
 
 audio {
     display: none;
-} */
+}
 
 
 
@@ -292,12 +248,15 @@ span {
 
 .finca-item {
     position: relative;
-    width: 250px; /* Tamaño controlado */
-    transform: rotate(-3deg); /* Ligera inclinación para efecto collage */
+    width: 250px;
+    /* Tamaño controlado */
+    transform: rotate(-3deg);
+    /* Ligera inclinación para efecto collage */
 }
 
 .finca-item:nth-child(even) {
-    transform: rotate(3deg); /* Alternar rotación */
+    transform: rotate(3deg);
+    /* Alternar rotación */
 }
 
 .collage-img {
@@ -795,6 +754,28 @@ button#submit:active {
 }
 
 
+/* MÚSICA */
+
+#musica {
+    text-align: center;
+    padding: 20px;
+}
+
+#musica h1 {
+    color: #f59d9e;
+    font-family: "Over the Rainbow";
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.musica-texto p {
+    text-align: center;
+    padding: 15px;
+}
+
+
+
 /* VESTIMENTA */
 
 #vestimenta {
@@ -814,6 +795,49 @@ button#submit:active {
     text-align: center;
     padding: 15px;
 }
+
+
+
+
+/* CARROUSEL */
+
+#carrousel {
+    text-align: center;
+    padding: 20px;
+}
+
+#carrousel h1 {
+    color: #f59d9e;
+    font-family: "Over the Rainbow";
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.carrousel-texto p {
+    text-align: center;
+    padding: 20px;
+    padding: 10px;
+    /* Ajusta el relleno según sea necesario */
+}
+
+.carousel-item img {
+    height: auto;
+    /* Ajusta la altura de las imágenes */
+    max-width: 40%;
+    object-fit: cover;
+    /* Asegúrate de que las imágenes se escalen correctamente */
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-item img {
+        height: 450px;
+        /* Ajusta la altura de las imágenes */
+        max-width: 100%;
+    }
+}
+
 
 
 /* REGALOS */
@@ -849,8 +873,8 @@ button#submit:active {
 
 /* FOOTER */
 .pre-footer {
-    max-width: 100%;
-    mask-image: linear-gradient(to top, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%);
+    max-width: 60%;
+    margin: 10px auto 20px;
 }
 
 
