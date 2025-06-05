@@ -656,6 +656,7 @@ label[for="busNo"] {
     background-color: white;
     z-index: 1000;
     width: max-content;
+    overflow-y: auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -669,6 +670,7 @@ label[for="busNo"] {
         background-color: white;
         z-index: 1000;
         width: 350px;
+        overflow-y: auto;
     }
 }
 
