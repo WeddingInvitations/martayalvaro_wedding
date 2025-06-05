@@ -628,7 +628,8 @@ label[for="busNo"] {
         padding: 20px;
         background-color: white;
         z-index: 1000;
-        width: 350px;
+        max-height: 90vh;
+        width: 90%;
         overflow-y: auto;
     }
 }
